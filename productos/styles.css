@@ -1,0 +1,236 @@
+.imagen-zoom {
+    transition: transform 0.3s; /* Establece la duración de la animación */
+}
+
+/* LO SIGUIENTE PERTENECE A LA BARRA SUPERIOR DE LA PAGINA*/
+
+/* Estilos para la barra de navegación */
+header {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+/* Estilos para el logo */
+.logo img {
+    height: 30px; /* Ajusta el tamaño de tu logo */
+}
+
+.logou img {
+    height: 30px;
+    margin-right: 30px;
+}
+
+/* Posicion y tamaño de la barra de busqueda */
+.search-bar {
+    flex-grow: 1; /* Esta propiedad permite que la barra de búsqueda ocupe el espacio restante */
+    margin-left: 20px; /* Agregamos un margen izquierdo para separarla del logo */
+}
+
+/* Estilos para la barra de búsqueda */
+.search-bar input {
+    padding: 5px;
+    border: none;
+    border-radius: 3px;
+    width: 500px; /* Ancho */
+    margin-right: 10px;
+}
+
+/* Flecha del boton servicios*/
+.menu-button img {
+    height: 10px; /* Ajusta el tamaño de la imagen */
+}
+
+/* Estilos para los botones de "servicios"*/
+.menu-button {
+    background-color: #333;
+    color: #fff;
+    border-radius: 3px;
+    padding: 5px 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+.submenu-button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    padding: 5px 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+/* Estilos para el menú de navegación */
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    position: relative;
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Estilos para los submenús */
+nav ul li ul {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    min-width: 150px;
+    top: 100%;
+    left: 0;
+}
+
+nav ul li:hover ul {
+    display: block;
+}
+
+/* Estilos para el botón de inicio de sesión */
+.login-button button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.login-button button i {
+    margin-right: 5px;
+}
+
+/* AQUI FINALIZAN LOS ESTILOS DE LA BARRA SUPERIOR DE LA PAGINA */
+
+/* AQUI COMIENZAN LOS ESTILOS DEL CONTENIDO DE LA PAGINA*/
+
+/* Estilo de fondo */
+body {
+    background-image: url('fondo.png');
+    background-size: cover;  
+    background-color: #292929;
+
+}
+
+/* Estilo del cuadro */
+.contact-form {
+    background-color: white;
+    border: 1px solid #333;
+    padding: 10px 50px; /* Margen dedntro */
+    margin: 30px 30px; /* Distancia entre el contenido de otro contenido */
+    max-width: 1500px; /* Ancho */
+    text-align: center; /* Centra el texto horizontalmente */
+    font-size: 25px; 
+}
+
+.contact-form .abajo {
+    text-align: center;
+    font-size: 25px;
+    color: #000;
+}
+
+.contact-form .abajo h4 {
+    margin-top: -15px; /* quita espacio entre los guiones y el texto */
+}
+
+.contact-form h4 {
+    margin-top: 5px; /* quita espacios entre las cadenas de texto */
+}
+
+.inferior.cuadros img {
+    height: 300px;
+    width: 300px;
+    justify-content: space-between;
+    border: 3px solid #000; /* Borde */
+}
+
+.inferior {
+    background-color: #fff;
+    max-width: 2000px;
+    padding: 10px 10px; 
+}
+
+.inferior.cuadros .imagen-container1 {
+    display: inline-block; /* Muestra los elementos en la misma línea */
+    text-align: center; /* Centra el contenido horizontalmente */
+    vertical-align: top; /* Alinea la parte superior de los elementos */
+    width: 30%; /* Ajusta el ancho para que haya 3 elementos en una fila */
+    padding: 0px 0px; /* Añade espaciado horizontal entre elementos */
+}
+.imagen-container1:hover {
+    transform: scale(1.1);
+}
+
+.inferior.cuadros .imagen-container2 {
+    display: inline-block; /* Muestra los elementos en la misma línea */
+    text-align: center; /* Centra el contenido horizontalmente */
+    vertical-align: top; /* Alinea la parte superior de los elementos */
+    width: 30%; /* Ajusta el ancho para que haya 3 elementos en una fila */
+    padding: 0px 0px; /* Añade espaciado horizontal entre elementos */
+}
+.imagen-container2:hover {
+    transform: scale(1.1);
+}
+
+.inferior.cuadros .imagen-container3 {
+    display: inline-block; /* Muestra los elementos en la misma línea */
+    text-align: center; /* Centra el contenido horizontalmente */
+    vertical-align: top; /* Alinea la parte superior de los elementos */
+    width: 30%; /* Ajusta el ancho para que haya 3 elementos en una fila */
+    padding: 0px 0px; /* Añade espaciado horizontal entre elementos */
+}
+.imagen-container3:hover {
+    transform: scale(1.1);
+}
+
+.inferior.cuadros .imagen-container4 {
+    display: inline-block; /* Muestra los elementos en la misma línea */
+    text-align: center; /* Centra el contenido horizontalmente */
+    vertical-align: top; /* Alinea la parte superior de los elementos */
+    width: 30%; /* Ajusta el ancho para que haya 3 elementos en una fila */
+    padding: 0px 0px; /* Añade espaciado horizontal entre elementos */
+}
+.imagen-container4:hover {
+    transform: scale(1.1);
+}
+
+.inferior.cuadros .imagen-container5 {
+    display: inline-block; /* Muestra los elementos en la misma línea */
+    text-align: center; /* Centra el contenido horizontalmente */
+    vertical-align: top; /* Alinea la parte superior de los elementos */
+    width: 30%; /* Ajusta el ancho para que haya 3 elementos en una fila */
+    padding: 0px 0px; /* Añade espaciado horizontal entre elementos */
+}
+.imagen-container5:hover {
+    transform: scale(1.1);
+}
+
+.inferior.cuadros .imagen-container6 {
+    display: inline-block; /* Muestra los elementos en la misma línea */
+    text-align: center; /* Centra el contenido horizontalmente */
+    vertical-align: top; /* Alinea la parte superior de los elementos */
+    width: 30%; /* Ajusta el ancho para que haya 3 elementos en una fila */
+    padding: 0px 0px; /* Añade espaciado horizontal entre elementos */
+}
+.imagen-container6:hover {
+    transform: scale(1.1);
+}
+
+.contact-form .by {
+    text-align: center;
+    font-size: 20px;
+}
+
+
+/* Created by: Nestor Fabian Cañaveral Velasquez & Andres Fabian Marrugo Rugeles */

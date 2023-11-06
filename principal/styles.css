@@ -1,0 +1,215 @@
+.imagen-zoom {
+    transition: transform 0.3s; /* Establece la duración de la animación */
+}
+
+/* LO SIGUIENTE PERTENECE A LA BARRA SUPERIOR DE LA PAGINA*/
+
+/* Estilos para la barra de navegación */
+header {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+/* Estilos para el logo */
+.logo img {
+    height: 30px; /* Ajusta el tamaño de tu logo */
+}
+
+.logou img {
+    height: 30px;
+    margin-right: 30px;
+}
+
+/* Posicion y tamaño de la barra de busqueda */
+.search-bar {
+    flex-grow: 1; /* Esta propiedad permite que la barra de búsqueda ocupe el espacio restante */
+    margin-left: 20px; /* Agregamos un margen izquierdo para separarla del logo */
+}
+
+/* Estilos para la barra de búsqueda */
+.search-bar input {
+    padding: 5px;
+    border: none;
+    border-radius: 3px;
+    width: 500px; /* Ancho */
+    margin-right: 10px;
+}
+
+/* Flecha del boton servicios*/
+.menu-button img {
+    height: 10px; /* Ajusta el tamaño de la imagen */
+}
+
+/* Estilos para los botones de "servicios"*/
+.menu-button {
+    background-color: #333;
+    color: #fff;
+    border-radius: 3px;
+    padding: 5px 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+.submenu-button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    padding: 5px 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+/* Estilos para el menú de navegación */
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    position: relative;
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Estilos para los submenús */
+nav ul li ul {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    min-width: 150px;
+    top: 100%;
+    left: 0;
+}
+
+nav ul li:hover ul {
+    display: block;
+}
+
+/* Estilos para el botón de inicio de sesión */
+.login-button button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.login-button button i {
+    margin-right: 5px;
+}
+
+/* AQUI FINALIZAN LOS ESTILOS DE LA BARRA SUPERIOR DE LA PAGINA */
+
+/* AQUI COMIENZAN LOS ESTILOS DEL CONTENIDO DE LA PAGINA*/
+
+/* Estilo de fondo */
+body {
+    /* background-image: url('fondo.png'); Ruta de la imagen de fondo 
+    background-size: cover;  Ajustar la imagen al tamaño de la ventana */
+    background-color: #292929;
+
+}
+
+/* Estilo del cuadro de arriba*/
+.contact-form {
+    background-image: url('paginap.png'), none; /* none para evitar la repetición de fondo */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 10px 50px; /* Margen dedntro */
+    
+    background-position: left top;
+    max-width: 2000px; /* Ancho */
+    text-align: center; /* Centra el texto horizontalmente */
+    font-size: 45px;
+    color: #fff;
+}
+
+
+.contact-form .abajo {
+    text-align: center;
+    font-size: 25px;
+    color: #fff;
+}
+
+.inferior.cuadros img {
+    border-radius: 3px;
+    color: #000;
+    background-color: #FFFF;
+    height: 350px;
+    width: 350px;
+    display: flex; 
+    justify-content: space-between;
+}
+
+.inferior {
+    background-color: #fff;
+    max-width: 2000px;
+    padding: 10px 50px; 
+}
+
+.inferior.cuadros .imagen p {
+    font-size: 30px; /* Tamaño de fuente */
+    color: #333; /* Color de texto */
+    text-align: center; /* Centrar el texto */
+    margin-top: 5px; /* Espacio entre la imagen y el texto */
+    text-align: center;
+    flex: 1;
+    padding: 0 10px;
+}
+
+.inferior.cuadros .imagen-container1 {
+    display: inline-block; /* Muestra los elementos en la misma línea */
+    text-align: center; /* Centra el contenido horizontalmente */
+    vertical-align: top; /* Alinea la parte superior de los elementos */
+    width: 350px; /* Ajusta el ancho para que haya 3 elementos en una fila */
+    padding: 20px 10px; /* Añade espaciado horizontal entre elementos */
+}
+
+.imagen-container1:hover {
+    transform: scale(1.1);
+}
+
+.inferior.cuadros .imagen-container2 {
+    display: inline-block; /* Muestra los elementos en la misma línea */
+    text-align: center; /* Centra el contenido horizontalmente */
+    vertical-align: top; /* Alinea la parte superior de los elementos */
+    width: 350px; /* Ajusta el ancho para que haya 3 elementos en una fila */
+    padding: 20px 10px; /* Añade espaciado horizontal entre elementos */
+}
+
+.imagen-container2:hover {
+    transform: scale(1.1);
+}
+
+.inferior.cuadros .imagen-container3 {
+    display: inline-block; /* Muestra los elementos en la misma línea */
+    text-align: center; /* Centra el contenido horizontalmente */
+    vertical-align: top; /* Alinea la parte superior de los elementos */
+    width: 350px; /* Ajusta el ancho para que haya 3 elementos en una fila */
+    padding: 20px 10px; /* Añade espaciado horizontal entre elementos */
+}
+
+.imagen-container3:hover {
+    transform: scale(1.1);
+}
+
+.by {
+    text-align: center;
+}
+
+
+/* Created by: Nestor Fabian Cañaveral Velasquez & Andres Fabian Marrugo Rugeles */

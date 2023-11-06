@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Formulario de contacto</title>
+</head>
+<body>
+    <header>
+        <!-- Contenedor para el logo -->
+        <div class="logo">
+            <img src="logo.png" alt="Logo">
+        </div>
+        <!-- Contenedor para la barra de búsqueda -->
+        <div class="search-bar">
+            <input type="text" placeholder="Buscar...">
+        </div>
+        <!-- Contenedor del logo de la universidad -->
+        <div class="logou">
+            <a href="https://www.unicartagena.edu.co/">
+                <img src="ucartagena.png" alt="Ir a la universidad de Cartagena">
+            </a>
+        </div>
+
+        <!-- Barra de navegación principal -->
+        <nav>
+            <ul>
+                <!-- Elemento del menú "Servicios" con submenús -->
+                <li>
+                    <button class="menu-button"> Servicios <img src="flecha.png"></button>
+                    <ul>
+                        <!-- Submenús -->
+                        <li><button class="submenu-button"><a href="../principal/index.html">Pagina principal</a></button></li>
+                        <li><button class="submenu-button"><a href="../productos/main.html">Productos </a></button></li>
+                        <li><button class="submenu-button"><a href="../quienes somos/mainquien.html">Sobre Nosotros</a></button></li>
+                        <li><button class="submenu-button"><a href="../formulario/mainformulario.html">Formulario</a></button></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <!-- Botón de inicio de sesión -->
+        <div class="login-button">
+            <button>
+                <i class="fas fa-lock"></i> Ingresar
+            </button>
+        </div>
+    </header>
+
+    <!-- Formulario de contacto -->
+    <div class="contact-form">
+        <h2>Formulario de contacto</h2>
+        <!-- contenido del formulario -->
+
+        <!-- Tipo de pedido -->
+        <div>
+            <h3>Tipo de pedido</h3>
+            <input type="radio" id="mercancia" name="tipo-pedido" value="mercancia">
+            <label for="mercancia">Mercancía</label>
+        
+            <input type="radio" id="atencion-cliente" name="tipo-pedido" value="atencion-cliente">
+            <label for="atencion-cliente">Atención al cliente</label>
+        
+            <input type="radio" id="proveedores" name="tipo-pedido" value="proveedores">
+            <label for="proveedores">Proveedores</label>
+        </div>
+
+        <!-- Nombre -->
+        <div>
+            <Label for="nombre"><h3>Nombre:</h3></label>
+            <input type="text" id="nombre" name="nombre" placeholder="Nombre">
+            <input type="text" id="nombre" name="nombre" placeholder="Apellido">
+        </div>
+
+        <!-- Email -->
+        <div>
+            <label for="email"><h3>Email:</h3></label>
+            <input type="email" id="email" name="email" placeholder="@example.es">
+        </div>
+        
+        <!-- Telefono -->
+        <div>
+            <label for="telefono"><h3>Teléfono:</h3></label>
+            <input type="tel" id="telefono" name="telefono" placeholder="Numero de telefono/celular">
+        </div>
+        
+        <!-- Mensaje -->
+        <div>
+            <label for="mensaje"><h3>Mensaje:</h3></label>
+            <textarea id="mensaje" name="mensaje" cols="100" rows="10"></textarea>
+        </div>
+
+        <!-- Boton de guardar -->
+        <div>
+            <button type="submit">Guardar</button>
+        </div>
+
+        <div>
+            <label class="by">
+                <h4>ESTE PORTAL ES REALIZADO CON FINES ACADEMICOS</h4>
+                <h4>Created by: Nestor Fabian Cañaveral Velasquez & Andres Fabian Marrugo Rugeles</h4>
+            </label>
+        </div>
+
+    </div>
+</body>
+</html>
+
+<!-- Created by: Nestor Fabian Cañaveral Velasquez & Andres Fabian Marrugo Rugeles -->
